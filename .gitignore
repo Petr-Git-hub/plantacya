@@ -1,0 +1,5 @@
+# Editor ignores
+.idea
+
+# Other ignores
+/node_modules
