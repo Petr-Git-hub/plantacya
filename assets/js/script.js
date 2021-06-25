@@ -45,8 +45,20 @@ $(document).ready(function () {
         }
     })
 
-});
 
+});
+$(window).scroll(function () {
+
+    var heightScrollTop = $(window).scrollTop(),
+        heightHeader = $("header");
+
+    if (heightScrollTop > 200) {
+        heightHeader.addClass('fixed');
+
+    } else {
+        $('header').removeClass('fixed');
+    }
+});
 $(window).resize(function () {
 
 });
