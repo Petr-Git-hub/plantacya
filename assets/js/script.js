@@ -28,15 +28,11 @@ $(document).ready(function () {
         responsive:{
             0:{
                 items:1,
-                nav:false,
-                dots:true,
             },
-            575:{
+            576:{
                 items:2,
-                nav:false,
-                dots:true,
             },
-            767:{
+            769:{
                 items:3
             },
             1100:{
@@ -44,6 +40,15 @@ $(document).ready(function () {
             }
         }
     })
+    $('.banner-slider').owlCarousel({
+        loop:true,
+        margin:0,
+        items:1,
+        nav:false,
+        dots:true,
+    })
+
+    $(".phone").mask("+7(999) 999-99-99");
 
 
 });
@@ -52,7 +57,7 @@ $(window).scroll(function () {
     var heightScrollTop = $(window).scrollTop(),
         heightHeader = $("header");
 
-    if (heightScrollTop > 200) {
+    if (heightScrollTop > 1) {
         heightHeader.addClass('fixed');
 
     } else {

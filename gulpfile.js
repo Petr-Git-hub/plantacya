@@ -4,10 +4,12 @@ const watchSass = require("gulp-watch-sass");
 const concat_css = require('gulp-concat-css');
 const minify_css = require('gulp-minify-css');
 const notify = require('gulp-notify');
+const group_media = require("gulp-group-css-media-queries");
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const autoprefix = require('gulp-autoprefixer');
 const run_sequence = require('run-sequence');
+const shorthand = require('gulp-shorthand');
 
 gulp.task('css-vendor', function () {
     return gulp.src([
@@ -45,6 +47,8 @@ gulp.task('scripts', function () {
 gulp.task('scss', function () {
     return gulp.src('assets/scss/style.scss')
         .pipe(scss({outputStyle: 'compressed'}).on('error', scss.logError))
+        .pipe(group_media())
+        .pipe(shorthand())
         .pipe(autoprefix({
             browsers: [
                 '> 0.1%',

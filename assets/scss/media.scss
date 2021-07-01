@@ -11,6 +11,51 @@
       margin-right: 20px;
     }
   }
+
+  // order-section
+  .wrap-order-inf {
+    max-width: 800px;
+  }
+  .card {
+    &__btn {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrap-order-inf {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .order-status {
+    height: 310px;
+    padding: 20px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+
+  .mob-image {
+    &__two {
+      left: 23%;
+    }
+    &__three {
+      left: 33%;
+    }
+    &__four {
+      left: 10%
+    }
+    &__five {
+      right: 0;
+      img {
+        left: 10%
+      }
+    }
+    &__six {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -180,11 +225,133 @@
       padding-left: 10px;
     }
   }
+
+  .form-mob-text {
+    max-width: 400px;
+    width: 100%;
+  }
+  .mob-section {
+    &__inf {
+      width: 70%;
+    }
+  }
+
+
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .banner-slider {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .order-status {
+    height: 185px;
+    padding: 20px;
+    width: calc((100% - 40px) / 2);
+    margin: 0 10px 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+  .wap-order-status {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  .wrap-order-inf {
+    display: contents;
+  }
 
+  .order-inf {
+    width: calc((100% - 40px) / 2);
+    margin: 0 10px 20px;
+    max-width: none;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 22px 10px;
+  }
+  .mob-section {
+    padding-top: 45px;
+    padding-bottom: 0;
+    &__inf {
+      width: 100%;
+      margin-bottom: 80px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+  }
+  .form-mob {
+    .form-group {
+      max-width: none;
+      width: calc(100% - 154px);
+    }
+  }
+  .mob-image {
+    width: calc(100% + 40px);
+    height: auto;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding-top: 80%;
+    margin: 0 -20px;
 
+    &__one {
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &__two, &__three, &__four, &__five, &__six {
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+      }
+    }
+    &__two {
+      top: 0;
+      left: 17%;
+      width: 17%;
+      padding-top: 20%;
+    }
+    &__three {
+      bottom: 30%;
+      left: 20%;
+      width: 19%;
+      padding-top: 18%;
+    }
+    &__four {
+      bottom: -37px;
+      left: 5%;
+      z-index: 6;
+      width: 26%;
+      padding-top: 25%;
+    }
+    &__five {
+      top: -52px;
+      right: 26%;
+      z-index: 2;
+      width: 29%;
+      padding-top: 26%;
+    }
+    &__six {
+      display: block;
+      width: 50%;
+      padding-top: 42%;
+      img {
+        object-position: 80px;
+      }
+    }
+  }
+  .discounts {
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -240,9 +407,33 @@
   }
 
   .discounts h2 {
-    padding-right: 0;
+    padding-right: 110px;
+    padding-left: 34px;
+    &::before {
+      width: 20px;
+    }
+  }
+  .banner-card h2 {
+    font-size: 36px
   }
 
+  .discounts-slider.owl-carousel .owl-nav button.owl-next, .discounts-slider.owl-carousel .owl-nav button.owl-prev {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .discounts-slider .owl-nav {
+    top: -85px;
+  }
+
+  .fz48 {
+    font-size: 36px;
+  }
+  .mob-section {
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -260,8 +451,48 @@
       width: 100%;
     }
   }
+
+
+  .order-status {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .order-inf {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .wap-order-status {
+    margin: 0;
+  }
+  .banner-slider {
+    margin-bottom: 30px;
+  }
+  .banner-card {
+    padding: 15px 20px 40px;
+    height: 187px;
+    &__body {
+      max-width: 210px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      line-height: 120%;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+  }
+  .banner-slider .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+  .mob-section {
+    padding-top: 40px;
+  }
 }
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 460px) {
   .card {
     &__img {
       padding-top: 50%;
@@ -272,5 +503,81 @@
       padding-top: 0;
       width: 100%;
     }
+  }
+
+  .order-status {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .order-inf {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  .banner-slider {
+    margin-bottom: 20px;
+  }
+  .discounts-slider .owl-nav {
+    top: 0;
+    position: relative;
+    justify-content: center;
+    padding-right: 20px;
+    margin-top: 30px;
+  }
+
+  .discounts h2 {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    &:before {
+      width: 50px;
+      bottom: -9px;
+      top: auto;
+      right: 0;
+    }
+  }
+  .mob-section {
+    padding-top: 30px;
+    &__inf {
+      h2 {
+        text-align: center;
+      }
+    }
+    &__text {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    &__subtitle {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+  }
+  .mob-image {
+    &__four {
+      bottom: -9%;
+    }
+  }
+  .store-box {
+    text-align: center;
+    margin-bottom: 0;
+    &__brand {
+      margin-right: 0;
+    }
+  }
+  .form-mob {
+    .btn {
+      width: 100%;
+    }
+    .form-group {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  .form-mob-text {
+    text-align: center;
+  }
+  .discounts {
+    padding-bottom: 50px;
   }
 }
