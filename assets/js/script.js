@@ -73,6 +73,8 @@ $(document).ready(function () {
         items: 1,
         nav: false,
         dots: true,
+        autoplay:true,
+        autoplayTimeout:3000,
     })
 
     $(".phone").mask("+7(999) 999-99-99");
