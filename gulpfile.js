@@ -15,6 +15,7 @@ gulp.task('css-vendor', function () {
     return gulp.src([
         'node_modules/wowjs/css/libs/animate.css',
         'node_modules/owl.carousel/dist/assets/owl.carousel.css',
+        'node_modules/jquery.scrollbar/jquery.scrollbar.css'
     ])
 
         .pipe(concat_css('vendor.css'))
@@ -31,6 +32,7 @@ gulp.task('scripts', function () {
     return gulp
         .src([
             "node_modules/jquery/dist/jquery.min.js",
+            'node_modules/jquery.scrollbar/jquery.scrollbar.js',
             'node_modules/owl.carousel/dist/owl.carousel.js',
             "node_modules/wowjs/dist/wow.js",
             'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',

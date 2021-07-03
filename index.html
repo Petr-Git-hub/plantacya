@@ -15,8 +15,11 @@
     <title>станция плантация</title>
 </head>
 
-<body>
-
+<body class="body">
+<div class="body-fon">
+    <div class="circle circle__left"></div>
+    <div class="circle circle__right"></div>
+</div>
 
 <header>
     <nav class="header__bottom">
@@ -24,60 +27,352 @@
         <div class="container">
             <div class="header__flex">
                 <a href="/" class="logo"><img src="assets/img/logo.svg" alt="test"></a>
-
+                <div class="menu-mobile-fon"></div>
                 <div class="menu-mobile">
-                    <div class="wrap-catalog-search">
-                        <div class="catalog-menu">
-                            <div class="catalog-menu__button">
-                                <div class="hamburger">
-                                    <span class="hamburger__line-top"></span>
-                                    <span class="hamburger__line-center"></span>
-                                    <span class="hamburger__line-bottom"></span>
+                    <a href="/" class="logo"><img src="assets/img/logo.svg" alt="test"></a>
+                    <div class="menu-mobile__scroll">
+                        <div class="header__top-title menu-mobile__title">Полезные ссылки</div>
+                        <div class="header__top">
+                            <div class="container">
+                                <div class="header__flex">
+                                    <ul class="menu-header">
+                                        <li class="menu-header__li">
+                                            <a href="#" class="menu-header__link">Главная</a>
+                                        </li>
+                                        <li class="menu-header__li">
+                                            <a href="#" class="menu-header__link">О компании</a>
+                                        </li>
+                                        <li class="menu-header__li">
+                                            <a href="#" class="menu-header__link">Информация о доставке</a>
+                                        </li>
+                                        <li class="menu-header__li">
+                                            <a href="#" class="menu-header__link">Для юридических лиц</a>
+                                        </li>
+                                    </ul>
+                                    <a href="mailto:info@stancia-plantacia.ru"
+                                       class="mail">info@stancia-plantacia.ru</a>
                                 </div>
-                                Каталог
-                            </div>
-                            <div class="catalog-menu__dropdown">
-                                <ul>
-                                    <li><a href="#">Ссылка</a></li>
-                                    <li><a href="#">Ссылка</a></li>
-                                    <li><a href="#">Ссылка</a></li>
-                                    <li><a href="#">Ссылка</a></li>
-                                </ul>
                             </div>
                         </div>
-                        <form class="search">
-                            <label><input type="search" placeholder="Поиск по сайту: Компот, варенье, лук или другое"
-                                          class="form-control search__inp"></label>
-                            <button type="button" class="search__button"></button>
-                        </form>
-                    </div>
-
-                    <div class="vcard">
-                        <a href="tel:88435005159" class="tel">8 (843) 500-51-59</a>
-                        <div class="workhours">пн–вс: 9:00–21:00</div>
-                    </div>
-                    <a href="#" class="user-door"><span class="ic-user ic"></span>Войти</a>
-
-                    <div class="header__top">
-                        <div class="container">
-                            <div class="header__flex">
-                                <ul class="menu-header">
-                                    <li class="menu-header__li">
-                                        <a href="#" class="menu-header__link">Главная</a>
-                                    </li>
-                                    <li class="menu-header__li">
-                                        <a href="#" class="menu-header__link">О компании</a>
-                                    </li>
-                                    <li class="menu-header__li">
-                                        <a href="#" class="menu-header__link">Информация о доставке</a>
-                                    </li>
-                                    <li class="menu-header__li">
-                                        <a href="#" class="menu-header__link">Для юридических лиц</a>
-                                    </li>
-                                </ul>
-                                <a href="mailto:info@stancia-plantacia.ru" class="mail">info@stancia-plantacia.ru</a>
+                        <a href="#" class="user-door"><span class="ic-user ic"></span>Войти</a>
+                        <div class="menu-mobile__menu-category">
+                            <div class="title menu-mobile__title">Каталог</div>
+                            <div class="menu-category">
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu1.svg" alt="">
+                                            Собственное производство
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu2.svg" alt="">
+                                            Местное
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu3.svg" alt="">
+                                            Фермерские продукты
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu4.svg" alt="">
+                                            Фрукты, овощи, ягоды, зелень, грибы
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu5.svg" alt="">
+                                            Орехи и сухофрукты
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu6.svg" alt="">
+                                            Молоко, сыр, яйцо
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu7.svg" alt="">
+                                            Мясо, птица, колбасы
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu8.svg" alt="">
+                                            Сладости, шоколад, печенье, торты, десерты
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu9.svg" alt="">
+                                            Полуфабрикаты, замороженные продукты
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu10.svg" alt="">
+                                            Рыба и морепродукты
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu11.svg" alt="">
+                                            Вода, соки, напитки
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu12.svg" alt="">
+                                            Хлеб, хлебцы
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu13.svg" alt="">
+                                            Чай, кофе, какао
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu14.svg" alt="">
+                                            Крупы, масло, соусы, консервы
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu15.svg" alt="">
+                                            Здоровое питание
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu16.svg" alt="">
+                                            Подарочные наборы, карты
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu17.svg" alt="">
+                                            Детское питание, уход, гигиена
+                                        </a>
+                                        <div class="menu-category__click"></div>
+                                    </div>
+                                    <div class="menu-category__subcategory">
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                        <a href="#" class="menu-category__subcategory-link">Собственное производство</a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu18.svg" alt="">
+                                            Натуральная косметика, гигиена
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu19.svg" alt="">
+                                            Для дома и дачи
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu20.svg" alt="">
+                                            Халяль
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu21.svg" alt="">
+                                            Уцененные товары
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu-category__category">
+                                    <div class="menu-category__title">
+                                        <a href="#" class="menu-category__link">
+                                            <img src="assets/img/image-menu22.svg" alt="">
+                                            Акции и скидки
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="wrap-catalog-search">
+                            <div class="catalog-menu">
+                                <div class="catalog-menu__button">
+                                    <div class="hamburger">
+                                        <span class="hamburger__line-top"></span>
+                                        <span class="hamburger__line-center"></span>
+                                        <span class="hamburger__line-bottom"></span>
+                                    </div>
+                                    Каталог
+                                </div>
+                                <div class="catalog-menu__dropdown">
+                                    <ul>
+                                        <li><a href="#">Ссылка</a></li>
+                                        <li><a href="#">Ссылка</a></li>
+                                        <li><a href="#">Ссылка</a></li>
+                                        <li><a href="#">Ссылка</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <form class="search">
+                                <label><input type="search"
+                                              placeholder="Поиск по сайту: Компот, варенье, лук или другое"
+                                              class="form-control search__inp"></label>
+                                <button type="button" class="search__button"></button>
+                            </form>
+                        </div>
+
+                        <div class="menu-mobile__title">Контакты</div>
+                        <a href="mailto:info@stancia-plantacia.ru" class="menu-mobile__mail">info@stancia-plantacia.ru</a>
+                        <div class="vcard">
+                            <a href="tel:88435005159" class="tel">8 (843) 500-51-59</a>
+                            <div class="workhours">пн–вс: 9:00–21:00</div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -184,13 +479,15 @@
 
         </div>
 
-        <div class="discounts">
-            <h2>Акции и скидки</h2>
-            <div class="owl-carousel discounts-slider">
+        <div class="discounts slider-section">
+            <h2 class="line">Акции и скидки</h2>
+            <div class="owl-carousel card-slider">
                 <div>
                     <div class="card">
                         <a href="#" class="abs-link"></a>
-                        <div class="discounts-tag">-20%</div>
+                        <div class="card-tag">
+                            <div class="card-tag__discounts">-20%</div>
+                        </div>
                         <picture class="card__img">
                             <img src="assets/img/image1.png" alt="">
                         </picture>
@@ -213,7 +510,34 @@
                 <div>
                     <div class="card">
                         <a href="#" class="abs-link"></a>
-                        <div class="discounts-tag">-24%</div>
+                        <div class="card-tag">
+                            <div class="card-tag__discounts">-20%</div>
+                        </div>
+                        <picture class="card__img">
+                            <img src="assets/img/image1.png" alt="">
+                        </picture>
+                        <div class="card__body">
+                            <h5>Вода Сан Бенедетто негаз 0,25 л</h5>
+                            <div class="card__price price">
+                                <span class="price__active">100 ₽</span>
+                                <span class="price__old">125</span>
+                            </div>
+                            <div class="card__footer">
+                                <div class="heart"></div>
+                                <button type="button" class="card__btn btn"><span class="mob-none">Добавить</span> в
+                                    корзину
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <a href="#" class="abs-link"></a>
+                        <div class="card-tag">
+                            <div class="card-tag__discounts">-20%</div>
+                        </div>
                         <picture class="card__img">
                             <img src="assets/img/image2.png" alt="">
                         </picture>
@@ -235,7 +559,9 @@
                 <div>
                     <div class="card">
                         <a href="#" class="abs-link"></a>
-                        <div class="discounts-tag">-13%</div>
+                        <div class="card-tag">
+                            <div class="card-tag__discounts">-20%</div>
+                        </div>
                         <picture class="card__img">
                             <img src="assets/img/image3.png" alt="">
                         </picture>
@@ -257,7 +583,9 @@
                 <div>
                     <div class="card">
                         <a href="#" class="abs-link"></a>
-                        <div class="discounts-tag">-28%</div>
+                        <div class="card-tag">
+                            <div class="card-tag__discounts">-20%</div>
+                        </div>
                         <picture class="card__img">
                             <img src="assets/img/image4.png" alt="">
                         </picture>
@@ -301,7 +629,9 @@
                         </div>
                         <button type="submit" class="btn">Отправить</button>
                     </form>
-                    <div class="form-mob-text">Нажимая на кнопку вы соглашаетесь с условиями обработки персональных данных</div>
+                    <div class="form-mob-text">Нажимая на кнопку вы соглашаетесь с условиями обработки персональных
+                        данных
+                    </div>
                 </div>
                 <div class="mob-image">
                     <div class="mob-image__one mob-image__img"><img src="assets/img/mob-image1.png" alt=""></div>
@@ -315,12 +645,504 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="new-display slider-section">
+            <h2 class="line">Новое на витрине</h2>
+            <div class="owl-carousel card-slider">
+                <div>
+                    <div class="card">
+                        <a href="#" class="abs-link"></a>
+                        <div class="card-tag">
+                            <div class="card-tag__new-product">Новинка</div>
+                        </div>
+                        <picture class="card__img">
+                            <img src="assets/img/image1.jpg" alt="">
+                        </picture>
+                        <div class="card__body">
+                            <h5>Вода Сан Бенедетто негаз 0,25 л</h5>
+                            <div class="card__price price">
+                                <span class="price__active">100 ₽</span>
+                                <span class="price__old">125</span>
+                            </div>
+                            <div class="card__footer">
+                                <div class="heart"></div>
+                                <button type="button" class="card__btn btn"><span class="mob-none">Добавить</span> в
+                                    корзину
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <a href="#" class="abs-link"></a>
+                        <div class="card-tag">
+                            <div class="card-tag__new-product">Новинка</div>
+                        </div>
+                        <picture class="card__img">
+                            <img src="assets/img/image2.jpg" alt="">
+                        </picture>
+                        <div class="card__body">
+                            <h5>Бутень /Шушан/ маринованный AGROYANS 730гр</h5>
+                            <div class="card__price price">
+                                <span class="price__active">175 ₽</span>
+                                <span class="price__old">130</span>
+                            </div>
+                            <div class="card__footer">
+                                <div class="heart"></div>
+                                <button type="button" class="card__btn btn"><span class="mob-none">Добавить</span> в
+                                    корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <a href="#" class="abs-link"></a>
+                        <div class="card-tag">
+                            <div class="card-tag__new-product">Новинка</div>
+                        </div>
+                        <picture class="card__img">
+                            <img src="assets/img/image3.jpg" alt="">
+                        </picture>
+                        <div class="card__body">
+                            <h5>Варенье из баклажана AGROYANS, 430гр.</h5>
+                            <div class="card__price price">
+                                <span class="price__active">185 ₽</span>
+                                <span class="price__old">212</span>
+                            </div>
+                            <div class="card__footer">
+                                <div class="heart"></div>
+                                <button type="button" class="card__btn btn"><span class="mob-none">Добавить</span> в
+                                    корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <a href="#" class="abs-link"></a>
+                        <div class="card-tag">
+                            <div class="card-tag__new-product">Новинка</div>
+                        </div>
+                        <picture class="card__img">
+                            <img src="assets/img/image4.jpg" alt="">
+                        </picture>
+                        <div class="card__body">
+                            <h5>Компот AGROYANS из абрикосов 1 л</h5>
+                            <div class="card__price price">
+                                <span class="price__active">110 ₽</span>
+                                <span class="price__old">152</span>
+                            </div>
+                            <div class="card__footer">
+                                <div class="heart"></div>
+                                <button type="button" class="card__btn btn"><span class="mob-none">Добавить</span> в
+                                    корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalogGo-section">
+        <div class="catalogGo-section__picture">
+            <img src="assets/img/catalogGo-section.jpg" alt="">
+            <div class="catalogGo__image">
+                <div class="catalogGo__one catalogGo__img"><img src="assets/img/mob-image5.png" alt=""></div>
+                <div class="catalogGo__two catalogGo__img"><img src="assets/img/mob-image4.png" alt=""></div>
+                <div class="catalogGo__three catalogGo__img"><img src="assets/img/mob-image2.png" alt=""></div>
+                <div class="catalogGo__four catalogGo__img"><img src="assets/img/mob-image6.png" alt=""></div>
+                <div class="catalogGo__five catalogGo__img"><img src="assets/img/mob-image3.png" alt=""></div>
+            </div>
+        </div>
+        <h2 class="fz48">Доставка правильных продуктов
+            <span class="text_orange">для правильного питания</span></h2>
+        <a href="catalog.html" class="btn">Перейти в каталог</a>
+    </div>
+
+    <div class="container">
+        <div class="advantages-section">
+            <h2 class="line">Наши преимущества</h2>
+            <div class="advantages-flex">
+                <div class="card-advantages">
+                    <div class="card-advantages__img">
+                        <img src="assets/img/card-advantages1.svg" alt="">
+                    </div>
+                    <div class="card-advantages__title">Высокие стандарты отбора</div>
+                    <div class="card-advantages__text">Ничего перезрелого или битого, только самое свежее. То, что мы
+                        отбраковываем, попадает в другие магазины.
+                    </div>
+                </div>
+                <div class="card-advantages">
+                    <div class="card-advantages__img">
+                        <img src="assets/img/card-advantages2.svg" alt="">
+                    </div>
+                    <div class="card-advantages__title">Без вредной химии</div>
+                    <div class="card-advantages__text">Мы за правильные продукты для правильного питания. Сотрудничаем
+                        напрямую с фермерами и садоводами.
+                    </div>
+                </div>
+                <div class="card-advantages">
+                    <div class="card-advantages__img">
+                        <img src="assets/img/card-advantages3.svg" alt="">
+                    </div>
+                    <div class="card-advantages__title">Возврат-обмен без проблем</div>
+                    <div class="card-advantages__text">Не понравился вкус или цвет? Без проблем вернем деньги или
+                        обменяем товар в течение суток.
+                    </div>
+                </div>
+                <div class="card-advantages">
+                    <div class="card-advantages__img">
+                        <img src="assets/img/card-advantages4.svg" alt="">
+                    </div>
+                    <div class="card-advantages__title">Подарки к каждому заказу</div>
+                    <div class="card-advantages__text">Мы любим удивлять своих посетителей и поэтому дарим скидки,
+                        бонусы или продукты на выбор почти с каждым заказом!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="instagram-section">
+            <h2 class="line">О нас говорят...</h2>
+            <a href="https://instagram.com/@stancia_plantacia" class="instagram-link">@stancia_plantacia</a>
+            <div class="instagram-slider owl-carousel">
+                <div class="card-instagram">
+                    <div class="card-instagram__top">
+                        <div class="card-instagram__img">
+                            <img src="assets/img/card-instagram__img.jpg" alt="">
+                        </div>
+                        <div class="card-instagram__inf">
+                            <div class="card-instagram__name">Ксения</div>
+                            <div class="card-instagram__nikName">@miss_pashkovskaya</div>
+                            <div class="card-instagram__date">04 Февраля 2019 21:34</div>
+                        </div>
+                    </div>
+                    <div class="card-instagram__body">
+                        <div class="card-instagram__text">
+                            <p>Иногда случается так, что несколько факторов сходятся и приходится искать решения.
+                                ⠀<br>
+                                ⠀<br>
+                                Но правда в том, что многие полезные продукты не доступны в обычных магазинах. И даже не
+                                все гипермаркеты могут похвастаться наличием того же бездрожжевого хлеба на
+                                цельнозерновой муке или конфеты без сахара и фруктозы. 🙅Да что говорить, частая
+                                проблема даже обычные фрукты и овощи. Порой они в таком ужасном состоянии, что даже
+                                даром не возьмешь. 🤢</p>
+                        </div>
+                        <a href="#" class="card-instagram__link">Перейти в Instagram</a>
+                    </div>
+                </div>
+                <div class="card-instagram">
+                    <div class="card-instagram__top">
+                        <div class="card-instagram__img">
+                            <img src="assets/img/card-instagram__img.jpg" alt="">
+                        </div>
+                        <div class="card-instagram__inf">
+                            <div class="card-instagram__name">Ксения</div>
+                            <div class="card-instagram__nikName">@miss_pashkovskaya</div>
+                            <div class="card-instagram__date">04 Февраля 2019 21:34</div>
+                        </div>
+                    </div>
+                    <div class="card-instagram__body">
+                        <div class="card-instagram__text">
+                            <p>Иногда случается так, что несколько факторов сходятся и приходится искать решения.
+                                ⠀<br>
+                                ⠀<br>
+                                Но правда в том, что многие полезные продукты не доступны в обычных магазинах. И даже не
+                                все гипермаркеты могут похвастаться наличием того же бездрожжевого хлеба на
+                                цельнозерновой муке или конфеты без сахара и фруктозы. 🙅Да что говорить, частая
+                                проблема даже обычные фрукты и овощи. Порой они в таком ужасном состоянии, что даже
+                                даром не возьмешь. 🤢</p>
+                        </div>
+                        <a href="#" class="card-instagram__link">Перейти в Instagram</a>
+                    </div>
+                </div>
+                <div class="card-instagram">
+                    <div class="card-instagram__top">
+                        <div class="card-instagram__img">
+                            <img src="assets/img/card-instagram__img.jpg" alt="">
+                        </div>
+                        <div class="card-instagram__inf">
+                            <div class="card-instagram__name">Ксения</div>
+                            <div class="card-instagram__nikName">@miss_pashkovskaya</div>
+                            <div class="card-instagram__date">04 Февраля 2019 21:34</div>
+                        </div>
+                    </div>
+                    <div class="card-instagram__body">
+                        <div class="card-instagram__text">
+                            <p>Иногда случается так, что несколько факторов сходятся и приходится искать решения.
+                                ⠀<br>
+                                ⠀<br>
+                                Но правда в том, что многие полезные продукты не доступны в обычных магазинах. И даже не
+                                все гипермаркеты могут похвастаться наличием того же бездрожжевого хлеба на
+                                цельнозерновой муке или конфеты без сахара и фруктозы. 🙅Да что говорить, частая
+                                проблема даже обычные фрукты и овощи. Порой они в таком ужасном состоянии, что даже
+                                даром не возьмешь. 🤢</p>
+                        </div>
+                        <a href="#" class="card-instagram__link">Перейти в Instagram</a>
+                    </div>
+                </div>
+                <div class="card-instagram">
+                    <div class="card-instagram__top">
+                        <div class="card-instagram__img">
+                            <img src="assets/img/card-instagram__img.jpg" alt="">
+                        </div>
+                        <div class="card-instagram__inf">
+                            <div class="card-instagram__name">Ксения</div>
+                            <div class="card-instagram__nikName">@miss_pashkovskaya</div>
+                            <div class="card-instagram__date">04 Февраля 2019 21:34</div>
+                        </div>
+                    </div>
+                    <div class="card-instagram__body">
+                        <div class="card-instagram__text">
+                            <p>Иногда случается так, что несколько факторов сходятся и приходится искать решения.
+                                ⠀<br>
+                                ⠀<br>
+                                Но правда в том, что многие полезные продукты не доступны в обычных магазинах. И даже не
+                                все гипермаркеты могут похвастаться наличием того же бездрожжевого хлеба на
+                                цельнозерновой муке или конфеты без сахара и фруктозы. 🙅Да что говорить, частая
+                                проблема даже обычные фрукты и овощи. Порой они в таком ужасном состоянии, что даже
+                                даром не возьмешь. 🤢</p>
+                        </div>
+                        <a href="#" class="card-instagram__link">Перейти в Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions-section">
+        <div class="container">
+            <h2 class="line">Часто задаваемые вопросы</h2>
+            <div class="questions-section__flex">
+                <div class="questions-section__left">
+                    <div class="map-box">
+                        <div class="map-box__title">Наша зона доставки</div>
+                        <div class="map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abfa87a8f39f134bcda9ed49cf1d8f4d129334689f734f3c73b1fd2317fad2848&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions-section__right">
+                    <div class="questions-box">
+                        <div class="questions-box__title">Если я сделаю заказ, когда мне его привезут?<span class="questions-box__close"></span></div>
+                        <div class="questions-box__description" style="display:block;">Мы привезем ваш заказ в день оформления или любой другой
+                            выбранный день! Доставка разделена на четыре временных интервала: с 9:00 до 12:00, с 12:00
+                            до 15:00, с 15:00 до 18:00, с 18:00 до 22:00. Выбирайте удобный для Вас!
+                        </div>
+                    </div>
+                    <div class="questions-box">
+                        <div class="questions-box__title">Как я могу оплатить свой заказ?<span class="questions-box__close"></span></div>
+                        <div class="questions-box__description">Мы привезем ваш заказ в день оформления или любой другой
+                            выбранный день! Доставка разделена на четыре временных интервала: с 9:00 до 12:00, с 12:00
+                            до 15:00, с 15:00 до 18:00, с 18:00 до 22:00. Выбирайте удобный для Вас!
+                        </div>
+                    </div>
+                    <div class="questions-box">
+                        <div class="questions-box__title">Сколько стоит доставка?<span class="questions-box__close"></span></div>
+                        <div class="questions-box__description">Мы привезем ваш заказ в день оформления или любой другой
+                            выбранный день! Доставка разделена на четыре временных интервала: с 9:00 до 12:00, с 12:00
+                            до 15:00, с 15:00 до 18:00, с 18:00 до 22:00. Выбирайте удобный для Вас!
+                        </div>
+                    </div>
+                    <div class="questions-box">
+                        <div class="questions-box__title">Ваши цены выше чем в магазинах?<span class="questions-box__close"></span></div>
+                        <div class="questions-box__description">Мы привезем ваш заказ в день оформления или любой другой
+                            выбранный день! Доставка разделена на четыре временных интервала: с 9:00 до 12:00, с 12:00
+                            до 15:00, с 15:00 до 18:00, с 18:00 до 22:00. Выбирайте удобный для Вас!
+                        </div>
+                    </div>
+                    <div class="questions-box">
+                        <div class="questions-box__title">Можно ли украсить заказ, вложить открытку или перевязать лентой?<span class="questions-box__close"></span></div>
+                        <div class="questions-box__description">Мы привезем ваш заказ в день оформления или любой другой
+                            выбранный день! Доставка разделена на четыре временных интервала: с 9:00 до 12:00, с 12:00
+                            до 15:00, с 15:00 до 18:00, с 18:00 до 22:00. Выбирайте удобный для Вас!
+                        </div>
+                    </div>
+                    <div class="questions-box">
+                        <div class="questions-box__title">Можно ли сделать подарок или анонимный заказ?<span class="questions-box__close"></span></div>
+                        <div class="questions-box__description">Мы привезем ваш заказ в день оформления или любой другой
+                            выбранный день! Доставка разделена на четыре временных интервала: с 9:00 до 12:00, с 12:00
+                            до 15:00, с 15:00 до 18:00, с 18:00 до 22:00. Выбирайте удобный для Вас!
+                        </div>
+                    </div>
+                    <div class="questions-box">
+                        <div class="questions-box__title">У вас есть самовывоз?<span class="questions-box__close"></span></div>
+                        <div class="questions-box__description">Мы привезем ваш заказ в день оформления или любой другой
+                            выбранный день! Доставка разделена на четыре временных интервала: с 9:00 до 12:00, с 12:00
+                            до 15:00, с 15:00 до 18:00, с 18:00 до 22:00. Выбирайте удобный для Вас!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="article-section">
+        <div class="container">
+            <h2 class="line">Полезные статьи</h2>
+            <div class="article-slider owl-carousel">
+                <div class="card-article">
+                    <div class="card-article__img">
+                        <a href="#" class="abs-link"></a>
+                        <img src="assets/img/article-img1.jpg" alt="">
+                    </div>
+                    <div class="card-article__body">
+                        <div class="card-article__data">09.06.2019</div>
+                        <a href="#" class="card-article__title">Список недопустимых ингредиентов для пищевых продуктов, реализуемых сервисом «Станция Плантация»</a>
+                        <a href="#" class="card-article__link">Читать далее</a>
+                    </div>
+                </div>
+                <div class="card-article">
+                    <div class="card-article__img">
+                        <a href="#" class="abs-link"></a>
+                        <img src="assets/img/article-img2.jpg" alt="">
+                    </div>
+                    <div class="card-article__body">
+                        <div class="card-article__data">09.06.2019</div>
+                        <a href="#" class="card-article__title">Список недопустимых ингредиентов для пищевых продуктов, реализуемых сервисом «Станция Плантация»</a>
+                        <a href="#" class="card-article__link">Читать далее</a>
+                    </div>
+                </div>
+                <div class="card-article">
+                    <div class="card-article__img">
+                        <a href="#" class="abs-link"></a>
+                        <img src="assets/img/article-img3.jpg" alt="">
+                    </div>
+                    <div class="card-article__body">
+                        <div class="card-article__data">09.06.2019</div>
+                        <a href="#" class="card-article__title">Список недопустимых ингредиентов для пищевых продуктов, реализуемых сервисом «Станция Плантация»</a>
+                        <a href="#" class="card-article__link">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="all-link">Посмотреть все</a>
+        </div>
+    </div>
+
+    <div class="ask-question">
+        <div class="container">
+            <div class="ask-question__img">
+                <img src="assets/img/ask-question__img.png" alt="">
+            </div>
+            <div class="ask-question__inf">
+                <h2>Есть вопросы <span class="text_orange">или предложения?</span></h2>
+                <div class="ask-question__subtitle">Напишите нам и мы свяжемся с вами в течение рабочего дня</div>
+                <form action="#" class="ask-question__form form">
+                    <div class="form-group width-50">
+                        <label><input type="text" class="form-control" placeholder="Введите имя" required></label>
+                    </div>
+                    <div class="form-group width-50">
+                        <label><input type="text" class="form-control phone" placeholder="Контактный телефон" required></label>
+                    </div>
+                    <div class="form-group width-100">
+                        <label><textarea type="text" class="form-control" placeholder="Текст вопроса"></textarea></label>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                    <div class="ask-question__text">Нажимая на кнопку вы соглашаетесь с условиями обработки персональных данных</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </main>
 
 
-<footer>
+<footer class="footer">
     <div class="container">
-
+        <div class="footer__body">
+            <div class="footer__col-logo">
+                <a href="/" class="logo"><img src="assets/img/logo.svg" alt="test"></a>
+            </div>
+            <div class="footer__col-catalog">
+                <div class="width-1">
+                    <div class="footer__title">Каталог</div>
+                </div>
+                <div class="width-3">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Халяль</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Хлеб, хлебцы</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Для дома и дачи</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Чай, кофе, какао</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Здоровое питание</a></li>
+                    </ul>
+                </div>
+                <div class="width-3">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Молоко, сыр, яйцо</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Орехи и сухофрукты</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Вода, соки, напитки</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Мясо, птица, колбасы</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Подарочные наборы, карты</a></li>
+                    </ul>
+                </div>
+                <div class="width-3">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Крупы, масло, соусы, консервы</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Детское питание, уход, гигиена</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Натуральная косметика, гигиена</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Фрукты, овощи, ягоды, зелень, грибы</a></li>
+                        <li class="footer-menu__li"><a href="#" class="footer-menu__link">Сладости, шоколад, печенье, торты, десерты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__inf-contact">
+                <div class="footer__col-inf">
+                    <div class="width-1">
+                        <div class="footer__title">Информация</div>
+                    </div>
+                    <div class="width-1">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__li"><a href="#" class="footer-menu__link">О компании</a></li>
+                            <li class="footer-menu__li"><a href="#" class="footer-menu__link">Информация о доставке</a></li>
+                            <li class="footer-menu__li"><a href="#" class="footer-menu__link">Для юридических лиц</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__col-contact">
+                    <div class="width-1">
+                        <div class="footer__title">Контакты</div>
+                    </div>
+                    <div class="width-1">
+                        <div class="footer__vcard vcard">
+                            <a href="tel:88435005159" class="tel">8 (843) 500-51-59</a>
+                            <div class="workhours">пн–вс: 9:00–21:00</div>
+                        </div>
+                        <div class="footer__vcard">
+                            <a href="mailto:info@stancia-plantacia.ru" class="mail">info@stancia-plantacia.ru</a>
+                            <div class="workhours">пн–вс: 9:00–21:00</div>
+                        </div>
+                        <div class="social">
+                            <a href="#" class="vk social__link"><img src="assets/img/vk.svg" alt=""></a>
+                            <a href="#" class="in social__link"><img src="assets/img/instagramm.svg" alt=""></a>
+                            <a href="#" class="wp social__link"><img src="assets/img/whatsapp.svg" alt=""></a>
+                            <a href="#" class="ok social__link"><img src="assets/img/ok.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-flex">
+                <div class="copyright text">© 2021 «Станция-Плантация» </div>
+                <div class="footer__bottom-link">
+                    <a href="#" class="link text">Политика защиты и обработки персональных данных</a>
+                    <a href="#" class="link text">Правила пользования сервисом</a>
+                </div>
+            </div>
+            <div class="footer__bottom-studio">
+                <div class="text">Веб-дизайнер: <a href="#">samstyle.design</a></div>
+                <div class="text">Разработчик: <a href="#">smirnoff.site</a></div>
+            </div>
+        </div>
     </div>
 </footer>
 

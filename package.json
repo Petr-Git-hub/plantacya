@@ -34,6 +34,7 @@
     "gulp-webpcss": "^1.1.1",
     "jquery.fancybox": "^2.1.5",
     "jquery.maskedinput": "^1.4.1",
+    "jquery.scrollbar": "^0.2.11",
     "popper": "^1.0.1",
     "run-sequence": "^2.2.1"
   },
