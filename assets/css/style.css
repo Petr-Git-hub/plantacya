@@ -115,6 +115,13 @@ textarea:focus {
   outline: none;
 }
 
+label {
+  max-width: none;
+  margin-bottom: 0;
+  font-weight: normal;
+  display: contents;
+}
+
 a {
   text-decoration: none;
 }
@@ -168,6 +175,41 @@ a:hover {
 .btn:hover {
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.btn.active {
+  background: none #f3731c;
+  outline: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn:active {
+  background: none #f3731c;
+  outline: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn.focus,
+.btn:focus,
+.btn:focus-visible {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+  outline-offset: 0;
 }
 
 .container {
@@ -227,6 +269,7 @@ h5 {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 .body-fon:before {
@@ -877,6 +920,13 @@ header.fixed .header__bottom {
 .form-control:-ms-input-placeholder {
   font: 16px "Open Sans", sans-serif;
   color: #9D9D9D;
+}
+
+.form-control:focus {
+  border-color: #000000;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .order-section {
@@ -1676,6 +1726,10 @@ a.btn:hover {
   width: 20px;
   height: 20px;
   opacity: 0.4;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
 }
 
 .questions-box__close::before {
@@ -1700,6 +1754,13 @@ a.btn:hover {
   margin: auto;
   width: 100%;
   height: 2px;
+}
+
+.questions-box.active .questions-box__close {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .questions-box__description {
@@ -2666,7 +2727,7 @@ h2.line::before {
 }
 
 .navigation__text {
-  font: 14px/19px "Open Sans",sans-serif;
+  font: 14px/19px "Open Sans", sans-serif;
   color: #1A1A1A;
 }
 
@@ -2753,7 +2814,7 @@ h2.line::before {
 }
 
 .menu-subcategory__selected {
-  font: 700 14px "Open Sans",sans-serif;
+  font: 700 14px "Open Sans", sans-serif;
   width: 100%;
   height: 59px;
   display: -webkit-box;
@@ -2798,7 +2859,7 @@ h2.line::before {
 }
 
 .menu-subcategory__body-link {
-  font: 700 14px "Open Sans",sans-serif;
+  font: 700 14px "Open Sans", sans-serif;
   color: #1A1A1A;
   height: 48px;
   display: -webkit-box;

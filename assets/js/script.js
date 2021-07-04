@@ -8,6 +8,7 @@ $(document).ready(function () {
     $('.catalog-menu__button').click(function () {
         $(this).toggleClass('open');
     });
+
     //Открытие меню mob
     $('.menu-mobile-button').click(function () {
         $(this).toggleClass('active');
@@ -91,6 +92,12 @@ $(document).ready(function () {
             $(this).parents(".questions-box").find(".questions-box__description").slideDown();
         }
     })
+    // if($(".questions-box__description").hide()) {
+    //     $(".questions-box__close").css({"transform":"rotate(225deg)"})
+    // } else {
+    //     $(".questions-box__close").css({"transform":"rotate(0deg)"})
+    // }
+
 
     if ($(window).width() < 575) {
         $('.article-slider').owlCarousel({
